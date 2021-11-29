@@ -3,13 +3,13 @@ public class Main {
         // Начальное значение счета
         int account = 100;
         // Сумма пополнения
-        int refill = 1000;
+        int refill = 1050;
 
 
         boolean bonusYes = refill > 1000;
         int totalAccount = account + refill;
-        int bonus = refill / 100;
         if (bonusYes) {
+            int bonus = refill / 100;
             totalAccount = totalAccount + bonus;
             System.out.println("Вы получаете от нас бонус " + bonus + " руб.");
             System.out.println("Сумма средств на вашем счете c учетом полученных бонусов: " + totalAccount + " руб.");
